@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dowry Calculus</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Dowry Calculus</h1>
+    <form id="dowryForm">
+      <input type="text" placeholder="Job Role" required />
+      <input type="number" placeholder="Age" required />
+      <input type="text" placeholder="Estate (yes/no)" required />
+      <input type="number" placeholder="Monthly Income (₹)" required />
+      <input type="number" placeholder="Bank Balance (₹)" required />
+      <select required>
+        <option value="">Job Type</option>
+        <option value="govt">Government</option>
+        <option value="private">Private</option>
+      </select>
+      <input type="text" placeholder="Your Expectations" required />
+      <button type="button" onclick="calculateDowry()">Calculate Dowry</button>
+    </form>
+
+    <!-- Hidden at first -->
+    <div id="dowryWarning" style="display: none;">
+      <h2>STOP. THINK. REFLECT.</h2>
+      <p>Dowry is a punishable offense. Demanding or accepting dowry is a crime under the Dowry Prohibition Act, 1961.</p>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/vNQXw2IKeL4" frameborder="0" allowfullscreen></iframe>
+      <blockquote>“Any young man, who makes dowry a condition to marriage, discredits his education and his country.” — Mahatma Gandhi</blockquote>
+      <p>💔 Every year, thousands of women lose their lives due to dowry-related violence.</p>
+      <ul>
+        <li>👉 20+ dowry deaths per day in India</li>
+        <li>👉 Over 6,000 cases reported annually</li>
+        <li>👉 Countless unreported tragedies</li>
+      </ul>
+      <p>🕌 Islam forbids dowry.  
+      🕉️ Hinduism speaks of Kanyadaan, not cash deals.  
+      ✝️ Christianity and Sikhism reject materialism in marriage.</p>
+      <p>💥 Say NO to dowry. Say YES to dignity.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
