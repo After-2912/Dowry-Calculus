@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dowry Calculus</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Dowry Calculus 💰🚫</h1>
+    <p class="subtitle">A satirical mirror. A brutal truth. Let's rethink dowry.</p>
+
+    <form id="dowryForm">
+      <label>Age: <input type="number" name="age" required></label>
+      <label>Job Role: <input type="text" name="job" required></label>
+      <label>Income (Monthly ₹): <input type="number" name="income" required></label>
+      <label>Bank Balance (₹): <input type="number" name="balance" required></label>
+      <label>Do you own estate/property? 
+        <select name="estate" required>
+          <option value="">Select</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </label>
+      <label>Job Type:
+        <select name="govt" required>
+          <option value="">Select</option>
+          <option value="govt">Government</option>
+          <option value="private">Private</option>
+        </select>
+      </label>
+      <label>Expectations from partner: <input type="text" name="expectations"></label>
+      <button type="submit">Calculate Dowry</button>
+    </form>
+
+    <div id="resultSection" class="hidden">
+      <h2>Warning ⚠️</h2>
+      <p>This is not a real calculator.</p>
+      <p>Every time someone tries to measure a human life with money, a tragedy begins.</p>
+      
+      <video controls width="100%" src="assets/video/anti-dowry.mp4">Your browser does not support the video tag.</video>
+      
+      <div id="quotes"></div>
+      <div id="stats">
+        <h3>Did you know?</h3>
+        <ul>
+          <li>1 woman dies every hour in India due to dowry-related violence.</li>
+          <li>Over 7,000 dowry deaths are reported annually — many more go unreported.</li>
+          <li>Dowry is illegal under the Dowry Prohibition Act, 1961 (Section 498A IPC).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
